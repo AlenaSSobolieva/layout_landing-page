@@ -8,6 +8,11 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>The Met</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="src/images/logo.png" />
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
@@ -24,16 +29,16 @@
 
   <body class="page__body">
 
-    <header class="header">
+    <header class="header" id="top">
       <div class="container">
         <div class="header__content">
           <div class="top-bar">
-            <a href="#" class="top-bar__logo-link">
+            <a href="#top" class="top-bar__logo-link">
               <img src="src/images/logo.png" alt="The MET logo"
               class="top-bar__logo">
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
+              <a href="tel:+12125357710" class="icon icon--phone"></a>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -52,7 +57,7 @@
 
       <div class="container">
         <div class="top-bar menu__top">
-          <a href="#" class="top-bar__logo-link">
+          <a href="#top" class="top-bar__logo-link">
             <img src="src/images/logo.png"
             alt="The MET logo" class="top-bar__logo">
           </a>
@@ -62,19 +67,19 @@
           <nav class="nav menu__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link">Home</a>
+                <a href="#top" class="nav__link">Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link">About us</a>
+                <a href="#about-us" class="nav__link">About us</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link">Now on view</a>
+                <a href="#on-view" class="nav__link">Now on view</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link">Explore online</a>
+                <a href="#explore-online" class="nav__link">Explore online</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link">Contacts</a>
+                <a href="#contacts" class="nav__link">Contacts</a>
               </li>
               <li class="nav__item">
                 The Met Fifth Avenue
@@ -91,7 +96,7 @@
                 </a>
               </li>
               <li class="nav__item">
-                <a href="#" class="menu__call-to-order">
+                <a href="tel:+12125357710" class="menu__call-to-order">
                   call to order
                 </a>
               </li>
@@ -265,25 +270,25 @@
               <div class="contacts__item address">
                 <p class="address-line address-line--subtitle">The Met Fifth Avenue</p>
                 <p class="address-line">Phone</p>
-                <p class="address-line address-line--bold">+1 212-535-7710</p>
+                <a href="tel:+12125357710"  class="address-line address-line--bold">+1 212-535-7710</a>
                 <p class="address-line">Address</p>
-                <p class="address-line address-line--bold">1000 Fifth Avenue, New York, NY 10028</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=1000+Fifth+Avenue+New+York+NY+10028" target="_blank" rel="noopener" class="address-line address-line--bold">1000 Fifth Avenue, New York, NY 10028</a>
               </div>
 
               <div class="contacts__item address">
                 <p class="address-line address-line--subtitle">The Met Cloisters</p>
                 <p class="address-line">Phone</p>
-                <p class="address-line address-line--bold">+1 212-923-3700</p>
+                <a href="tel:+12129233700" class="address-line address-line--bold">+1 212-923-3700</a>
                 <p class="address-line">Address</p>
-                <p class="address-line address-line--bold">99 Margaret Corbin Drive, New York, NY 10040</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=99+Margaret+Corbin+Drive+New+York+NY+10040" target="_blank" rel="noopener" class="address-line address-line--bold">99 Margaret Corbin Drive, New York, NY 10040</a>
               </div>
 
               <div class="contacts__item">
-                <form action="#" class="form">
+                <form action="#" class="form" onsubmit="this.reset(); return false;">
 
-                  <input type="text" id="name" name="name" class="form-input" placeholder="Name">
-                  <input type="email" id="email" name="email" class="form-input" placeholder="Email">
-                  <textarea id="message" name="message" class="form-input form-input--message" placeholder="Message"></textarea>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Jack Sparrow" required>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="jack.sparrow@gmail.com" required>
+                  <textarea id="message" name="message" class="form-input form-input--message" placeholder="Your message ..." required></textarea>
 
                   <div class="button">
                     <a href="#" class="button-link">Send</a>
@@ -302,7 +307,6 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__container"></div>
     </footer>
 
   </body>
