@@ -1,0 +1,20 @@
+.footer {
+  &__container {
+    width: 100%;
+    display: block;
+    background-image: url('../images/footer-background.png');
+    background-size: fit;
+    background-position: center;
+    height: 180px;
+
+    @include on-tablet {
+      height: 359px;
+      min-width: 768px;
+    }
+
+    @include on-desktop {
+      height: 359px;
+      min-width: 1200px;
+    }
+  }
+}
