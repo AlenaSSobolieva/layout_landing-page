@@ -27,4 +27,41 @@
       transform: scale(1.2);
     }
   }
+
+  &__phone {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    &-list {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 100%;
+      display: none;
+      list-style: none;
+      text-align: left;
+      width: 200px;
+
+      &-item {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    @include on-desktop {
+      &:hover &-list {
+        display: block;
+      }
+    }
+  }
 }

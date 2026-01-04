@@ -1,21 +1,10 @@
 .button {
-  @include page-grid;
-
   display: flex;
   height: 56px;
   background-color: $accent-text-color;
   justify-content: center;
   align-items: center;
-
-  grid-column: span 2;
-
-  @include on-tablet {
-    grid-column: 2 / 5;
-  }
-
-  @include on-desktop {
-    grid-column: 5 / 8;
-  }
+  border: none;
 
   transition:
     background-color 0.2s,
@@ -31,6 +20,7 @@
 
   &-link {
     color: #fff;
+    font-family: Cinzel, serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;

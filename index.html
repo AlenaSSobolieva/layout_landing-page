@@ -38,7 +38,27 @@
               class="top-bar__logo">
             </a>
             <div class="top-bar__icons">
-              <a href="tel:+12125357710" class="icon icon--phone"></a>
+              <div class="top-bar__phone">
+                <a href="tel:+12125357710" class="icon icon--phone"></a>
+
+                <ul class="top-bar__phone-list">
+                  <li class="top-bar__phone-list-item">
+                    The Met Fifth Avenue
+                    <br>
+                    <a href="tel:+12125357710" class="top-bar__phone-link">
+                      +1 212-535-7710
+                    </a>
+                  </li>
+                  <li class="top-bar__phone-list-item">
+                    The Met Cloisters
+                    <br>
+                    <a href="tel:+12129233700" class="top-bar__phone-link">
+                      +1 212-923-3700
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -226,10 +246,10 @@
                 <p class="on-view__item-description">December 10, 2021 – March 6, 2022</p>
               </article>
 
-            </div>
+              <button class="button on-view__button">
+                <a href="#" class="button-link">View all exhibitions</a>
+              </button>
 
-            <div class="button">
-              <a href="#" class="button-link">View all exhibitions</a>
             </div>
 
           </section>
@@ -239,22 +259,28 @@
 
             <div class="explore-online__collection">
               <article class="collection collection__item">
-                <img src="./src/images/collection-areas.png" alt="collection areas"
-                class="collection__photo">
+                <a href="#" class="collection__item-link">
+                  <img src="./src/images/collection-areas.png" alt="collection areas"
+                  class="collection__photo">
+                </a>
                 <h3 class="collection__title">Collection Areas</h3>
                 <p class="collection__description">These collection areas study, exhibit, and care for the objects in The Met collection.</p>
               </article>
 
               <article class="collection collection__item">
-                <img src="./src/images/travel.png" alt="travel"
-                class="collection__photo">
+                <a href="#" class="collection__item-link">
+                  <img src="./src/images/travel.png" alt="travel"
+                  class="collection__photo">
+                </a>
                 <h3 class="collection__title">Travel</h3>
                 <p class="collection__description">Travel with The Met connects the Museum's wide and diverse audience to art, inspiration, and historical perspective.</p>
               </article>
 
               <article class="collection collection__item">
-                <img src="./src/images/virtual-group-tours.png" alt="virtual group tours"
-                class="collection__photo">
+                <a href="#" class="collection__item-link">
+                  <img src="./src/images/virtual-group-tours.png" alt="virtual group tours"
+                  class="collection__photo">
+                </a>
                 <h3 class="collection__title">Virtual group tours</h3>
                 <p class="collection__description"> Request a guided tour, reserve admission and lead your own small group, or request a live virtual tour led by a Museum guide.</p>
               </article>
@@ -290,9 +316,9 @@
                   <input type="email" id="email" name="email" class="form-input" placeholder="jack.sparrow@gmail.com" required>
                   <textarea id="message" name="message" class="form-input form-input--message" placeholder="Your message ..." required></textarea>
 
-                  <div class="button">
+                  <button class="button contacts__button">
                     <a href="#" class="button-link">Send</a>
-                  </div>
+                  </button>
                 </form>
               </div>
 
